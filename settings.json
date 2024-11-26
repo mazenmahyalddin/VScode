@@ -1,0 +1,52 @@
+{
+    "editor.minimap.enabled": false,
+    "editor.cursorStyle": "block-outline",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "breadcrumbs.enabled": false,
+
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "k"],
+            "after": ["<Esc>"]
+        }
+    ],
+
+    "vim.leader": "<Space>",
+    "vim.hlsearch": true,
+
+    "vim.normalModeKeyBindingsNonRecursive": [
+        // NAVIGATION
+        // switch b/w buffers
+        { "before": ["<S-h>"], "commands": [":bprevious"] },
+        { "before": ["<S-l>"], "commands": [":bnext"] },
+
+        // splits
+        { "before": ["<leader>", "v"], "commands": [":vsplit"] },
+        { "before": ["<leader>", "s"], "commands": [":split"] },
+
+        // panes
+        {
+            "before": ["<leader>", "h"],
+            "commands": ["workbench.action.focusLeftGroup"]
+        },
+
+        // Swap j and k
+//        {
+//            "before": ["j"],
+//            "after": ["k"]
+//        },
+//        {
+//            "before": ["k"],
+//            "after": ["j"]
+//        }
+    ],
+    "editor.fontSize": 16,
+    "editor.cursorBlinking": "solid"
+}
+
+
+
+
+
+
+
